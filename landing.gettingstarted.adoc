@@ -1,0 +1,55 @@
+---
+sidebar: sidebar 
+permalink: landing.gettingstarted.html 
+summary: VDM のランディングページを開始する 
+keywords:  
+---
+= VDM の成功のための開始ステップ
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:keywords: 
+:toc-position: content
+
+
+
+
+== VDM とは何ですか？
+
+Virtual Desktop Managed Service （ VDM ）は、ネットアップが管理する DaaS 解決策です。仮想デスクトップのプロビジョニング、導入、インフラストラクチャをアウトソーシングすることで、ユーザおよびアプリケーションに集中して、ユーザ 1 人あたり月額料金で集中できます。
+
+image::landing.gettingstarted-3b8c5.png[landing.gettingstarted 3b8c5]
+
+
+
+== VDMS をセットアップしています
+
+VDM 導入プロジェクトは、次の要素で構成されます。
+
+. link:serviceoffering.prerequisites.html["前提条件"]
+. お客様の環境の確認キックオフコール
+. ネットアップは WVD のインフラとワークスペースを提供します
+. インタラクティブライブトレーニングセッション
+. カスタマイズした WVD にデータ、アプリケーション、およびユーザーを追加します
+. 環境、ユーザデスクトップ、および接続をテストします
+. ライブ配信に進む
+
+
+
+
+== 次の手順
+
+適切かつタイムリーな導入を実現するには、次の手順を開始してください。
+
+. を取得します link:serviceoffering.prerequisites.html#m365-licensing["適切な Microsoft 365 ライセンス"] ユーザの場合
+. VDM ユーザーのリストを作成します
+. アプリケーション、メディア、ライセンス、ベンダー情報のリストを作成します。データベースやレガシーアプリケーションについては、特別な考慮事項やベンダーのサポートが必要になる場合があります
+. 転送する必要があるデータを特定します
+. 既存の Active Directory インスタンスを使用して導入する場合は、以下を確認してください link:serviceoffering.prerequisites.html#existing-ad-integration["その他の前提条件"]
+

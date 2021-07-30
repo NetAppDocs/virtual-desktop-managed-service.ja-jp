@@ -1,0 +1,99 @@
+---
+sidebar: sidebar 
+permalink: serviceoffering.prerequisites.html 
+summary: VDM の前提条件 
+keywords:  
+---
+= Virtual Desktop Managed Service （ VDM ）の前提条件
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:keywords: 
+:toc-position: content
+
+
+
+
+== M365 ライセンス
+
+VDM は、 Microsoft Windows Virtual Desktop (WVD) テクノロジを使用して構築されています。WVD の前提条件では、エンドユーザーに特定の Microsoft 365 （ M365 ）ライセンスを割り当てる必要があります。このライセンスは VDM サブスクリプションには含まれていません。ネットアップがこのライセンスを販売または提供することはありません。
+
+M365/WVD ライセンスのコンプライアンスに対する責任は、顧客企業、パートナー企業、および M365 ベンダーにあります。
+
+VDM の WVD ライセンスをサポートするさまざまな M365 プランがあります。詳細については、を参照してください link:https://azure.microsoft.com/en-us/pricing/details/virtual-desktop/["こちらをご覧ください"]。
+
+
+
+== M365/Azure AD テナント
+
+既存の Azure AD テナントが必要です。Microsoft 365 は、同じ Azure AD テナント構造に基づいているため、上記の M365 ライセンス要件を満たすこともこの要件を満たします。
+
+
+
+== CSP 販売代理店関係
+
+ネットアップでは、 Microsoft と CSP の関係を使用して、 VDM を専用の Azure サブスクリプションに導入しています。このサブスクリプションを導入するには、お客様の Azure AD テナントとリセラーの関係を確立する必要があります。お客様の Azure AD テナントのグローバル管理者は、ここでこの関係を承認できます。
+
+https://admin.microsoft.com/Adminportal/Home?invType=ResellerRelationship&partnerId=47c1f6d2-b112-48e0-915f-4304efffb3e8&msppId=0&DAP=true#/BillingAccounts/partner-invitation[]
+
+マルチパートナー機能には、次のような特徴があります。
+
+* お客様の既存のサブスクリプションを変更します
+* お客様の既存のサブスクリプションまたはアカウント所有権を移行します
+* 既存のサブスクリプションの契約条件またはお客様の義務を変更します
+* サブスクリプションのレコードのパートナーを変更します
+* 詳細： https://docs.microsoft.com/en-us/partner-center/multipartner[]
+
+
+
+
+=== 管理権限の委譲
+
+招待リンク（上記）には、委任管理者権限のリクエストが含まれています。承認すると、お客様の Azure AD テナントで NetApp Global Admin ロールと Helpdesk Admin ロールが付与されます。
+
+
+
+== 仮想ネットワークのスコープ
+
+VDM は Azure 内の仮想ネットワークに導入されます。このネットワークに使用される /20 IP 範囲を、環境内の他のネットワークと重複させることはできません。
+
+VDM 仮想ネットワークと他の顧客のネットワーク間のネットワーク接続を追加する場合、他のネットワーク IP 範囲と重複すると、 VDM が切断されます。したがって、完全に未使用の /20 範囲を VDM 専用にすることが重要です。
+
+/20 ネットワークスコープは、次のいずれかの IP 範囲内に配置する必要があります。
+
+* 10.0.0.0 ～ 10.255.255.255
+* 172.16.0.0 ～ 172.31.255.255
+* 192.168.0.0 ～ 192.168.255.255
+
+
+
+
+== VDM ワークシートを展開します
+
+お客様 / パートナーは、次の URL にある Deploy VDM ワークシートに記入する必要があります。https://www.deployvdms.com/[]
+
+
+
+== 既存の AD 統合
+
+VDM を既存の Active Directory ドメインコントローラ（ AD DC ）と統合するには、さらに次の前提条件が必要です。
+
+
+
+=== ローカルドメイン管理者クレデンシャル
+
+統合を確立するには、既存のドメイン上で domainjoin 権限を持つローカルドメイン管理者アカウントが必要です。
+
+
+
+=== Azure AD 接続
+
+WVD では、 Azure AD が AD Connect を使用して AD DC と同期されている必要があります。これがまだセットアップされていない場合は、セットアップされています link:https://www.microsoft.com/en-us/download/details.aspx?id=47594["ユーティリティ"] AD DC にインストールし、設定する必要があります。
+
+/=== VNet ピアリング用のネットワーク貢献者ロール /=== VPN を設定するためのローカルゲートウェイデバイス管理者権限 /=== DNS ゾーン（詳細な技術情報が必要） /=== マルチドメイン保存を行わない場合、ユーザーは展開先のドメインに属している必要があります

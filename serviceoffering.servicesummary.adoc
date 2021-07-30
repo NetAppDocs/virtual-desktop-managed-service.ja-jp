@@ -1,0 +1,133 @@
+---
+sidebar: sidebar 
+permalink: serviceoffering.servicesummary.html 
+summary: VDM サービスの概要 
+keywords:  
+---
+= Virtual Desktop Managed Service （ VDM ）サービスの概要
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:keywords: 
+:toc-position: content
+
+
+
+
+== ユーザーリソースの割り当て
+
+
+NOTE: この記事では、 VDM サービスの技術的な詳細について正確に説明します。サービスの詳細は変更される場合があります。この記事は、ネットアップとお客様またはパートナー様との間の既存の契約、契約、その他の取り決めに対する修正または変更を表しているものではありません。
+
+
+
+=== 共有ユーザー（ SKU: VDM- サブスクリプション - 共有ユーザー）
+
+共有ユーザセッションは、最大 10 のユーザセッションを持つセッションホスト仮想マシン（ SHVM ）上で実行されます。割り当てられた共有 SHVM の総数により、環境内の 10 人の共有ユーザーごとに少なくとも 1 つの共有 SHVM が確保されます。
+
+* 共有ユーザーごとに割り当てられたリソース :*
+
+* vCPU コアの 8 / 10 分の 1
+* 6.4GiB の RAM
+* 25GiB ストレージ
+
+
+* 共有 SHVM 技術詳細： *
+
+* 通常はから link:https://docs.microsoft.com/en-us/azure/virtual-machines/ev3-esv3-series["Esv3"]、  および  Azure 仮想マシンのファミリー。
+* 128GiB の標準 SSD OS ディスク
+* 仮想デスクトップ向け Windows 10 Enterprise
+* FSLogix によって接続されたコンテナユーザープロファイル
+* 会社の共有に接続されたストレージ
+
+
+
+
+=== VDI ユーザ（ SKU: VDM- サブスクリプション - VDI-USER ）
+
+VDI ユーザーのセッションは、他のユーザーセッションを同時にホストしない専用のセッションホスト仮想マシン（ SHVM ）上で実行されます。VDI SHVM の総数は、環境内の VDI ユーザーの総数と同じです。
+
+* VDI ユーザーごとに割り当てられたリソース :*
+
+* vCPU コア × 2
+* 8GiB の RAM
+* 25GiB ストレージ
+
+
+* VDI SHVM 技術詳細： *
+
+* 通常はから link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series["DSV 3"]、  および  Azure 仮想マシンのファミリー。
+* 128GiB の標準 HDD OS ディスク
+* 仮想デスクトップ向け Windows 10 Enterprise
+* FSLogix によって接続されたコンテナユーザープロファイル
+* 会社の共有に接続されたストレージ
+
+
+
+
+=== GPU ユーザ（ SKU: VDM-SUVGPU - ユーザ）
+
+GPU ユーザのセッションは、他のユーザセッションを同時にホストしない専用のセッションホスト仮想マシン（ SHVM ）上で実行されます。GPU SHVM の総数は、環境内の GPU ユーザの総数と同じです。
+
+* GPU ユーザーごとに割り当てられたリソース： *
+
+* 8GiB の GPU RAM
+* 25GiB ストレージ
+
+
+* GPU SHVM の技術的な詳細： *
+
+* 通常はから link:https://docs.microsoft.com/en-us/azure/virtual-machines/nvv3-series["NVv3"] および  Azure 仮想マシンのファミリー。
+* 128GiB の標準 HDD OS ディスク
+* 仮想デスクトップ向け Windows 10 Enterprise
+* FSLogix によって接続されたコンテナユーザープロファイル
+* 会社の共有に接続されたストレージ
+
+
+
+
+== その他の VDM SKU
+
+
+
+=== ビジネスサーバ（ SKU ： VDMs-Azure-business-VM ）
+
+ビジネスサーバを環境に追加して、アプリケーションとサービスをサポートできます。
+
+* 各ビジネスサーバ VM には、少なくとも * が割り当てられています
+
+* vCPU コア × 8
+* 64GiB の RAM
+* 128GiB の標準 SSD OS ディスク
+* Windows Server 2012 R2 / 2016/2019
+* 通常はから link:https://docs.microsoft.com/en-us/azure/virtual-machines/ev3-esv3-series["Esv3"]、  および  Azure 仮想マシンのファミリー。
+
+
+
+
+=== 追加ストレージ（ SKU ： VDM-1TB-Storage-HPRSCLR ）
+
+_ データストレージレイヤ _ は VDM 環境のプライマリストレージメカニズムであり、 Azure Files または Azure NetApp Files （ ANF ）で実行されます。使用するストレージテクノロジは、購入した VDM ユーザの合計によって決まります。1TiB 単位で容量を追加できます。
+
+ユーザプロファイル、ユーザデータ、会社共有、アプリケーションデータ、およびデータベースはすべて、このストレージサービスから実行する必要があります。可能なかぎり VM ディスクにデータを格納しないことを推奨します。
+
+容量は、ユーザあたりの割り当て（ 25GiB / ユーザ）と追加で購入した TIBs ストレージの合計です。
+
+|===
+| メートル法 | link:https://docs.microsoft.com/en-us/azure/storage/files/storage-files-scale-targets#storage-account-scale-targets["Azure Files GPv2 の場合"] | link:https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-service-levels["ANF Standard の略"] | link:https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-service-levels["ANF Premium"] 
+
+
+| ユーザー数 | 10-49 | 50-249 | 250 人以上 
+
+
+| 最小サイズ | 250 GiB | 4TiB 未満 | 4TiB 未満 
+
+
+| IOPS | 最大 1,000 | 最大 250/TiB | 最大 1 、 000/TiB 
+|===

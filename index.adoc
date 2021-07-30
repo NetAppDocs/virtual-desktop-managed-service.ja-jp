@@ -1,0 +1,141 @@
+---
+sidebar: sidebar 
+permalink: index.html 
+summary: Virtual Desktop Managed Service のドキュメントポータルへようこそ。 
+keywords:  
+---
+= Virtual Desktop Managed Service のマニュアル
+
+
+
+
+== 概要
+
+ネットアップの Virtual Desktop Managed Service （ VDM ）は、マネージド VDI サービスプラットフォームとして提供されるパブリッククラウドでの仮想デスクトップの導入と管理の複雑さを解消します。
+
+
+
+== サポートの利用
+
+E メールサポート： VDSsupport@netapp.com
+
+電話サポート :844.645.6789
+
+link:https://cloudjumper.zendesk.com["VDM サポートポータル"]
+
+通常のサポート営業時間：月曜日から金曜日、午前 7 時から午後 7 時まで中央時間。
+
+* 営業時間外（オンコール）のサポートは、電話でのみご利用いただけます。
+
+
+
+
+== Windows Virtual Desktop （ WVD ）クライアント
+
+* link:https://docs.microsoft.com/en-us/azure/virtual-desktop/connect-windows-7-10["Microsoft WVD for Windows クライアント"]
+* link:https://docs.microsoft.com/en-us/azure/virtual-desktop/connect-web["Microsoft WVD Web クライアント"]
+* link:https://docs.microsoft.com/en-us/azure/virtual-desktop/connect-android["Microsoft WVD for Android クライアント"]
+* link:https://docs.microsoft.com/en-us/azure/virtual-desktop/connect-macos["Microsoft WVD for macOS クライアント"]
+* link:https://docs.microsoft.com/en-us/azure/virtual-desktop/connect-ios["Microsoft WVD for iOS クライアント"]
+
+
+
+
+== サービスコンポーネント
+
+VDM は、ネットアップと Microsoft の複数のテクノロジを 1 つにまとめた共同管理サービスです。 EUC 市場で 20 年以上にわたって学んだベストプラクティスを適用します。選択したコンポーネントのリストの下に表示されます。お客様の要件の違いにより、すべてのコンポーネントがすべての環境で使用されるわけではありません。
+
+
+
+=== ネットアップ
+
+* link:https://cloud.netapp.com/saas-backup["NetApp SaaS Backup の特長"]
++
+** VDM には、ネットアップの SaaS バックアップサービスのライセンスが含まれています。
+
+
+* link:https://azure.microsoft.com/en-us/services/netapp/["Azure NetApp ファイル（ ANF ）"]
++
+** 49 人を超えるユーザが導入する環境では、 ANF をベースにしたデータストレージレイヤを使用しています。
+** ユーザ数が 250 人未満の環境では、標準のパフォーマンス階層が使用されます。
+** 249 人を人よりもユーザがいる環境では、プレミアムパフォーマンス階層が使用されます。
+
+
+* link:https://cloud.netapp.com/cloud-backup["NetApp Cloud Backup の特長"]
++
+** NetApp Cloud Backup は、 ANF ストレージボリュームのバックアップに使用します。
+
+
+* link:https://cloud.netapp.com/cloud-sync-service["NetApp Cloud Sync の略"]
++
+** NetApp Cloud Sync は、 ANF がデータストレージレイヤテクノロジである場合、 VDM にデータを移行するために使用できます。
+
+
+* link:https://cloud.netapp.com/cloud-insights["NetApp Cloud Insights の略"]
++
+** NetApp Cloud Insights は、パフォーマンス監視のためにネットアップのサポートおよびサービスチームが使用します。
+
+
+* link:https://cloudjumper.zendesk.com["NetApp VDM のサポート"]
++
+** VDM には、 24 時間体制のインシデントサポートと、専門のネットアップサポートチームが提供するインボーディングサービスが含まれます
+
+
+
+
+
+
+=== Microsoft 社
+
+* link:https://docs.microsoft.com/en-us/azure/storage/files/storage-files-scale-targets#storage-account-scale-targets["Azure Files （ AF ）"]
++
+** ユーザ数が 50 未満の環境では、 AF テクノロジに基づいてデータストレージレイヤが構築されます。GPv2 ストレージアカウントで「トランザクション向けに最適化」された階層を設定します。
+** 49 人を上回るユーザが ANF を使用している環境では、
+
+
+* link:https://azure.microsoft.com/en-us/services/backup/["Azure クラウドバックアップ"]
++
+** Azure Cloud Backup は、 AF ストレージボリュームおよび仮想マシンのバックアップに使用されます。
+
+
+* link:https://docs.microsoft.com/en-us/azure/storage/files/storage-sync-files-planning["Azure ファイル同期"]
++
+** AF がデータストレージレイヤテクノロジの場合、 Azure File Sync を使用して VDM にデータを移行できます。
+
+
+* link:https://azure.microsoft.com/en-us/services/azure-defender/["Azure Defender の特長です"]
++
+** VDM は、環境内のすべての仮想マシン上で高度なセキュリティサービスである Azure Defender をアクティブ化（およびライセンスを含む）します。管理と管理は、お客様やお客様の IT サービスプロバイダが Azure Security Center を通じて行います。VDM には Azure Security Center の管理は含まれていません。
+
+
+* link:https://azure.microsoft.com/en-us/services/virtual-machines/windows/["Azure 仮想マシン"]
++
+** VDM は、ユーザセッションとお客様のアプリケーションをホストするために、 Windows ベースの Azure 仮想マシンに大きく依存しています。
+
+
+* link:https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview["Azure Virtual Network ピアリング"]
++
+** VDM は、 Azure Virtual Network ピアリングを利用して、お客様の既存の Active Directory ドメインコントローラ（ AD DC ）と統合できます。
+
+
+* link:https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways["Azure VPN"]
++
+** VDM は、 Azure サイト間 VPN を利用して、お客様の既存の Active Directory ドメインコントローラ（ AD DC ）と統合することができます。
+
+
+* link:https://docs.microsoft.com/en-us/azure/virtual-desktop/overview["Windows 仮想デスクトップ（ WVD ）"]
++
+** VDM は、ネイティブ WVD 機能を活用して、ユーザーセッションの仲介、認証、 Windows ライセンスなどをサポートします。
+
+
+* link:https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect["Azure AD 接続"]
++
+** WVD を使用するには、ローカルドメイン（ AD DC ）と Azure AD が Azure AD Connect アプリケーション経由で同期されている必要があります。
+
+
+* link:https://azure.microsoft.com/en-us/pricing/details/virtual-desktop/["Microsoft 365 （ M365 ）"]
++
+** WVD ユーザーセッションおよびセッションホスト用の Windows 10 Enterprise は、特定の M365 ライセンスタイプを介してユーザーにライセンスされます。すべての VDM ユーザーに適切な M365 ライセンスを割り当てることは、 WVD および VDM の要件です。このライセンスは VDM には含まれていません。M365 のライセンス管理は、お客様や IT サービスプロバイダの責任で行ってください。
+
+
+

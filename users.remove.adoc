@@ -1,0 +1,65 @@
+---
+sidebar: sidebar 
+permalink: users.remove.html 
+summary: VDM でユーザーアクセスを削除しています 
+keywords:  
+---
+= ユーザーアクセスを削除しています
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:keywords: 
+:toc-position: content
+
+
+
+
+== ユーザーの削除
+
+.新しい Active Directory 展開（ VDM 用に新しい Active Directory ドメインが作成されました）
+. VDM でユーザーを削除します
++
+.. ワークスペースに移動し、 [ ユーザーとグループ ] タブを選択し、削除するユーザーの横にあるアクションドットをクリックして、 [ 削除 ] をクリックします。image:users.remove01.png["900,900"]
+.. 削除を延期するオプションとディレクトリから削除するオプションがポップアップに表示されますimage:users.remove02.png["900,900"]
++
+... [ 削除遅延 ] オプションは、ユーザーを削除する前に 90 分間待機します。これにより、プロセスがキャンセルされます。このチェックボックスをオンにすることをお勧めします。
+... [ ディレクトリから削除 ] オプションを選択すると、 Active Directory ユーザーアカウントが削除されます。このボックスがオンになっている必要があります。
+
+
+
+
+. 以下のいずれかの方法でユーザの削除をネットアップに通知します
++
+.. E メールサポート： VDSsupport@netapp.com
+.. 電話サポート :844.645.6789
+.. link:https://cloudjumper.zendesk.com["VDM サポートポータル"]
+
+
+
+
+.既存の Active Directory 展開（ VDM は既存の Active Directory に接続しています）
+. VDM でユーザーを削除します
++
+.. ワークスペースに移動し、 [ ユーザーとグループ ] タブを選択し、削除するユーザーの横にあるアクションドットをクリックして、 [ 削除 ] をクリックします。image:users.remove01.png["900,900"]
+.. 削除を延期するオプションとディレクトリから削除するオプションがポップアップに表示されますimage:users.remove03.png["900,900"]
++
+... [ 削除遅延 ] オプションは、ユーザーを削除する前に 90 分間待機します。これにより、プロセスがキャンセルされます。このチェックボックスをオンにすることをお勧めします。
+... [ ディレクトリから削除 ] オプションを選択すると、 Active Directory ユーザーアカウントが削除されます。このチェックボックスをオフにして、 Active Directory からアカウントを削除するための組織のユーザーアカウント削除プロセスに従うことをお勧めします。
+
+
+
+
+. 以下のいずれかの方法でユーザの削除をネットアップに通知します
++
+.. E メールサポート： VDSsupport@netapp.com
+.. 電話サポート :844.645.6789
+.. link:https://cloudjumper.zendesk.com["VDM サポートポータル"]
+
+
+

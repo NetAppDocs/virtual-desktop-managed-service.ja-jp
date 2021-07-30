@@ -1,0 +1,62 @@
+---
+sidebar: sidebar 
+permalink: administration.addremoveadmins.html 
+summary: VDM で管理者を追加および削除します 
+keywords:  
+---
+= VDM で管理者を追加および削除します
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:keywords: 
+:toc-position: content
+
+
+
+
+== VDM に管理者を追加しています
+
+* このプロセスはネットアップが行います
+* 次のいずれかの方法で NetApp VDM サポートに問い合わせます。
++
+.. E メールサポート： VDSsupport@netapp.com
+.. 電話サポート :844.645.6789
+.. link:https://cloudjumper.zendesk.com["VDM サポートポータル"]
+
+
+* 新しい admin アカウントには次の情報を追加してください。
++
+.. パートナーコード
+.. 姓と名
+.. E メールアドレス
+.. 権限が、に記載されているデフォルトの設定と異なる場合 link:FAQ.vdsadminpermissions.html["admin 権限"]
+
+
+
+
+
+
+== VDM で管理者を削除しています
+
+* このプロセスはパートナーによって処理されます
++
+.. 「 Admins 」タブに移動します
+.. 削除する管理者の右側にある [ 操作 ] ドットをクリックします
+.. [ 削除 ] をクリックします。
+.. 確認ボックスが表示されます。 [ はい、確認します ] をクリックします。image:administration.addremoveadmins01.png["900,900"]
+
+
+* 不明な点がある場合は、以下のいずれかの方法で NetApp VDM サポートにお問い合わせください。
++
+.. E メールサポート： VDSsupport@netapp.com
+.. 電話サポート :844.645.6789
+.. link:https://cloudjumper.zendesk.com["VDM サポートポータル"]
+
+
+

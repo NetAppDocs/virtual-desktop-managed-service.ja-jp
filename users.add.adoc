@@ -1,0 +1,68 @@
+---
+sidebar: sidebar 
+permalink: users.add.html 
+summary: VDM でユーザーアクセスを追加する 
+keywords:  
+---
+= ユーザアクセスを追加しています
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:keywords: 
+:toc-position: content
+
+
+
+
+== 新しいユーザの作成
+
+.新しい Active Directory 展開（ VDM 用に新しい Active Directory ドメインが作成されました）
+. VDS でユーザを作成します
++
+.. ワークスペースに移動し、 [ ユーザーとグループ ] タブを選択し、 [ 追加 ] をクリックして、 [ ユーザーの追加 ] を選択します。image:users.add01.png["900,900"]
+.. ユーザーの情報を入力し、 [ ユーザーの追加 ] をクリックします。image:users.add02.png["900,900"]
+
+
+. 次のいずれかの方法で追加ユーザをネットアップに通知します
++
+.. E メールサポート： VDSsupport@netapp.com
+.. 電話サポート :844.645.6789
+.. link:https://cloudjumper.zendesk.com["VDM サポートポータル"]
+
+
+. ユーザをホストプールに割り当てます
++
+.. [ ユーザーとグループ ] タブで、ホストプールにリンクされているユーザーグループをクリックします。たとえば、グループ「 Kift WVD Shared 」は VDM の WVD 共有ホストプールにリンクされます。"kift WVD Shared" に追加されたすべてのユーザには、 "WVD Shared" ホストプール内のセッションホストへのアクセスが割り当てられます。image:users.add03.png["900,900"]
+.. [ ユーザー ] ボックスの右上にある編集アイコンをクリックし、 [ ユーザーの追加 ] をクリックします。image:users.add04.png["900,900"]
+.. 追加するユーザーの横にあるチェックボックスをオンにして、 [ 続行 ] をクリックします。image:users.add05.png["900,900"]
+.. 詳しい手順については、を参照してください link:users.assigntoappgroup.html["こちらをご覧ください"]
+
+
+
+
+.既存の Active Directory 展開（ VDM は既存の Active Directory に接続しています）
+. 通常どおりに Active Directory にユーザを作成します
+. 導入環境に表示されている Active Directory グループにユーザを追加しますimage:users.add06.png["900,900"]
+. CloudWorkspace を有効にします
+. 次のいずれかの方法で追加ユーザをネットアップに通知します
++
+.. E メールサポート： VDSsupport@netapp.com
+.. 電話サポート :844.645.6789
+.. link:https://cloudjumper.zendesk.com["VDM サポートポータル"]
+
+
+. ユーザをホストプールに割り当てます
++
+.. [ ユーザーとグループ ] タブで、ホストプールにリンクされているユーザーグループをクリックします。たとえば、グループ「 Kift WVD Shared 」は VDM の WVD 共有ホストプールにリンクされます。"kift WVD Shared" に追加されたすべてのユーザには、 "WVD Shared" ホストプール内のセッションホストへのアクセスが割り当てられます。image:users.add03.png["900,900"]
+.. [ ユーザー ] ボックスの右上にある編集アイコンをクリックし、 [ ユーザーの追加 ] をクリックします。image:users.add04.png["900,900"]
+.. 追加するユーザーの横にあるチェックボックスをオンにして、 [ 続行 ] をクリックします。image:users.add05.png["900,900"]
+.. 詳しい手順については、を参照してください link:users.assigntoappgroup.html["こちらをご覧ください"]
+
+
+
