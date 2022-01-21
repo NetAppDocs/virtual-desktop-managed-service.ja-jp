@@ -49,11 +49,6 @@ VDM は、ネットアップと Microsoft の複数のテクノロジを 1 つ�
 
 === ネットアップ
 
-* link:https://cloud.netapp.com/saas-backup["NetApp SaaS Backup の特長"]
-+
-** VDM には、ネットアップの SaaS バックアップサービスのライセンスが含まれています。
-
-
 * link:https://azure.microsoft.com/en-us/services/netapp/["Azure NetApp ファイル（ ANF ）"]
 +
 ** 49 人を超えるユーザが導入する環境では、 ANF をベースにしたデータストレージレイヤを使用しています。
