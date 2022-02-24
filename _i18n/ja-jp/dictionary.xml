@@ -191,9 +191,6 @@
   <block id="f89a22674e8a92e50b2f8aad878c2dc1" category="section-title">サービスコンポーネント</block>
   <block id="221183f642ade47cc467abe7b9812d30" category="paragraph">VDM は、ネットアップと Microsoft の複数のテクノロジを 1 つにまとめた共同管理サービスです。 EUC 市場で 20 年以上にわたって学んだベストプラクティスを適用します。選択したコンポーネントのリストの下に表示されます。お客様の要件の違いにより、すべてのコンポーネントがすべての環境で使用されるわけではありません。</block>
   <block id="cfaa375bf6c7f9fcc1bc04d4f30c9154" category="section-title">ネットアップ</block>
-  <block id="72f6c2ed3549f0d5f63c9fac2754abf7" category="inline-link-macro">NetApp SaaS Backup の特長</block>
-  <block id="1ad7c199b2daa5bebcbcd0a0354d629e" category="list-text"><block ref="1ad7c199b2daa5bebcbcd0a0354d629e" category="inline-link-macro-rx"></block></block>
-  <block id="b47230a05c1b0d89e678d8679312f734" category="list-text">VDM には、ネットアップの SaaS バックアップサービスのライセンスが含まれています。</block>
   <block id="8f53b5241aa3284f9058318dcbc2504d" category="inline-link-macro">Azure NetApp ファイル（ ANF ）</block>
   <block id="807c90ee9f6f726952c2838ef0c351e1" category="list-text"><block ref="807c90ee9f6f726952c2838ef0c351e1" category="inline-link-macro-rx"></block></block>
   <block id="e7c7def4c520da02d9d2de3af21bfe23" category="list-text">49 人を超えるユーザが導入する環境では、 ANF をベースにしたデータストレージレイヤを使用しています。</block>
@@ -421,4 +418,5 @@
   <block id="f7dca0ff3aa4294b3f0d90f8edcaec5d" category="sidebar">管理者の追加 / 削除</block>
   <block id="063eef420fb2709abeb35146c37743ab" category="sidebar">VDM に関する FAQ</block>
   <block id="a7f7992bbd09f7d531e95587a1bb3f68" category="list-text">ポップアップが表示され、「削除の遅延」および「ディレクトリから削除」オプションが表示されます<block ref="bae6ebac53fd14801b2950e669918fa9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="54defe6db64b2cfbdd2cd6ccc464206d" category="paragraph">E メールサポート： support@spotpc.netapp.com</block>
 </blocks>
