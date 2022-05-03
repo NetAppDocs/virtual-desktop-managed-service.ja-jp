@@ -8,6 +8,7 @@ keywords:
 :toc: macro
 :hardbreaks:
 :toclevels: 2
+:allow-uri-read: 
 :toc: 
 :toclevels: 2
 :nofooter: 
@@ -40,7 +41,7 @@ NOTE: この記事では、 VDM サービスの技術的な詳細について正
 
 * 共有 SHVM 技術詳細： *
 
-* 通常はから link:https://docs.microsoft.com/en-us/azure/virtual-machines/ev3-esv3-series["Esv3"]、  および  Azure 仮想マシンのファミリー。
+* 通常はから link:https://docs.microsoft.com/en-us/azure/virtual-machines/ev3-esv3-series["Esv3"]、 link:https://docs.microsoft.com/en-us/azure/virtual-machines/ev4-esv4-series["Eav4."] および link:https://docs.microsoft.com/en-us/azure/virtual-machines/eav4-easv4-series["Easv4"] Azure 仮想マシンのファミリー。
 * 128GiB の標準 SSD OS ディスク
 * 仮想デスクトップ向け Windows 10 Enterprise
 * FSLogix によって接続されたコンテナユーザープロファイル
@@ -62,7 +63,7 @@ VDI ユーザーのセッションは、他のユーザーセッションを同�
 
 * VDI SHVM 技術詳細： *
 
-* 通常はから link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series["DSV 3"]、  および  Azure 仮想マシンのファミリー。
+* 通常はから link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series["DSV 3"]、 link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv4-dsv4-series["Dav4."] および link:https://docs.microsoft.com/en-us/azure/virtual-machines/dav4-dasv4-series["Dasv4"] Azure 仮想マシンのファミリー。
 * 128GiB の標準 HDD OS ディスク
 * 仮想デスクトップ向け Windows 10 Enterprise
 * FSLogix によって接続されたコンテナユーザープロファイル
@@ -83,7 +84,7 @@ GPU ユーザのセッションは、他のユーザセッションを同時に�
 
 * GPU SHVM の技術的な詳細： *
 
-* 通常はから link:https://docs.microsoft.com/en-us/azure/virtual-machines/nvv3-series["NVv3"] および  Azure 仮想マシンのファミリー。
+* 通常はから link:https://docs.microsoft.com/en-us/azure/virtual-machines/nvv3-series["NVv3"] および link:https://docs.microsoft.com/en-us/azure/virtual-machines/nvv4-series["NVv4"] Azure 仮想マシンのファミリー。
 * 128GiB の標準 HDD OS ディスク
 * 仮想デスクトップ向け Windows 10 Enterprise
 * FSLogix によって接続されたコンテナユーザープロファイル
@@ -106,7 +107,7 @@ GPU ユーザのセッションは、他のユーザセッションを同時に�
 * 64GiB の RAM
 * 128GiB の標準 SSD OS ディスク
 * Windows Server 2012 R2 / 2016/2019
-* 通常はから link:https://docs.microsoft.com/en-us/azure/virtual-machines/ev3-esv3-series["Esv3"]、  および  Azure 仮想マシンのファミリー。
+* 通常はから link:https://docs.microsoft.com/en-us/azure/virtual-machines/ev3-esv3-series["Esv3"]、 link:https://docs.microsoft.com/en-us/azure/virtual-machines/ev4-esv4-series["Eav4."] および link:https://docs.microsoft.com/en-us/azure/virtual-machines/eav4-easv4-series["Easv4"] Azure 仮想マシンのファミリー。
 
 
 

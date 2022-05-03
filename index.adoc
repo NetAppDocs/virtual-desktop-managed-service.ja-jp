@@ -5,6 +5,7 @@ summary: Virtual Desktop Managed Service のドキュメントポータルへよ
 keywords:  
 ---
 = Virtual Desktop Managed Service のマニュアル
+:allow-uri-read: 
 
 
 
